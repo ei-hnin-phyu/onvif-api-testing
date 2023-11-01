@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf8'?>
+<ns0:Envelope xmlns:ns0="http://www.w3.org/2003/05/soap-envelope" xmlns:ns1="http://www.onvif.org/ver20/media/wsdl"><ns0:Body><ns1:GetProfilesResponse><ns1:Profiles token="Profile_1" fixed="true"><ns1:Name>mainStream</ns1:Name>
+<ns1:Configurations />
+</ns1:Profiles>
+<ns1:Profiles token="Profile_2" fixed="true"><ns1:Name>subStream</ns1:Name>
+<ns1:Configurations />
+</ns1:Profiles>
+<ns1:Profiles token="Profile_3" fixed="true"><ns1:Name>thirdStream</ns1:Name>
+<ns1:Configurations />
+</ns1:Profiles>
+</ns1:GetProfilesResponse>
+</ns0:Body>
+</ns0:Envelope>

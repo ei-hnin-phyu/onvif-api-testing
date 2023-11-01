@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf8'?>
+<ns0:Envelope xmlns:ns0="http://www.w3.org/2003/05/soap-envelope" xmlns:ns1="http://www.onvif.org/ver20/analytics/wsdl" xmlns:ns2="http://www.onvif.org/ver10/schema"><ns0:Body><ns1:GetSupportedRulesResponse><ns1:SupportedRules><ns2:RuleContentSchemaLocation>http://www.w3.org/2001/XMLSchema</ns2:RuleContentSchemaLocation>
+<ns2:RuleDescription Name="tt:CellMotionDetector"><ns2:Parameters><ns2:SimpleItemDescription Name="MinCount" Type="xs:integer" />
+<ns2:SimpleItemDescription Name="AlarmOnDelay" Type="xs:integer" />
+<ns2:SimpleItemDescription Name="AlarmOffDelay" Type="xs:integer" />
+<ns2:SimpleItemDescription Name="ActiveCells" Type="xs:base64Binary" />
+</ns2:Parameters>
+<ns2:Messages IsProperty="true"><ns2:Source><ns2:SimpleItemDescription Name="VideoSourceConfigurationToken" Type="tt:ReferenceToken" />
+<ns2:SimpleItemDescription Name="VideoAnalyticsConfigurationToken" Type="tt:ReferenceToken" />
+<ns2:SimpleItemDescription Name="Rule" Type="xs:string" />
+</ns2:Source>
+<ns2:Data><ns2:SimpleItemDescription Name="IsMotion" Type="xs:boolean" />
+</ns2:Data>
+<ns2:ParentTopic>tns1:RuleEngine/CellMotionDetector/Motion</ns2:ParentTopic>
+</ns2:Messages>
+</ns2:RuleDescription>
+<ns2:RuleDescription Name="hikxsd:TamperDetector" fixed="true"><ns2:Parameters><ns2:SimpleItemDescription Name="Field" Type="tt:PolygonConfiguration" />
+</ns2:Parameters>
+<ns2:Messages IsProperty="true"><ns2:Source><ns2:SimpleItemDescription Name="VideoSourceConfigurationToken" Type="tt:ReferenceToken" />
+<ns2:SimpleItemDescription Name="VideoAnalyticsConfigurationToken" Type="tt:ReferenceToken" />
+<ns2:SimpleItemDescription Name="Rule" Type="xs:string" />
+</ns2:Source>
+<ns2:Data><ns2:SimpleItemDescription Name="IsTamper" Type="xs:boolean" />
+</ns2:Data>
+<ns2:ParentTopic>tns1:RuleEngine/TamperDetector/Tamper</ns2:ParentTopic>
+</ns2:Messages>
+</ns2:RuleDescription>
+</ns1:SupportedRules>
+</ns1:GetSupportedRulesResponse>
+</ns0:Body>
+</ns0:Envelope>
