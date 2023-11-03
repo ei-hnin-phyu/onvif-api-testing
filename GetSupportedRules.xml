@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='utf8'?>
-<ns0:Envelope xmlns:ns0="http://www.w3.org/2003/05/soap-envelope" xmlns:ns1="http://www.onvif.org/ver20/analytics/wsdl" xmlns:ns2="http://www.onvif.org/ver10/schema"><ns0:Body><ns1:GetSupportedRulesResponse><ns1:SupportedRules><ns2:RuleContentSchemaLocation>http://www.w3.org/2001/XMLSchema</ns2:RuleContentSchemaLocation>
+<ns0:Envelope xmlns:ns0="http://www.w3.org/2003/05/soap-envelope" xmlns:ns1="http://www.onvif.org/ver20/analytics/wsdl" xmlns:ns2="http://www.onvif.org/ver10/schema"><ns0:Body>
+<ns1:GetSupportedRulesResponse><ns1:SupportedRules><ns2:RuleContentSchemaLocation>http://www.w3.org/2001/XMLSchema</ns2:RuleContentSchemaLocation>
 <ns2:RuleDescription Name="tt:CellMotionDetector"><ns2:Parameters><ns2:SimpleItemDescription Name="MinCount" Type="xs:integer" />
 <ns2:SimpleItemDescription Name="AlarmOnDelay" Type="xs:integer" />
 <ns2:SimpleItemDescription Name="AlarmOffDelay" Type="xs:integer" />

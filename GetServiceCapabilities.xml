@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf8'?>
+<ns0:Envelope xmlns:ns0="http://www.w3.org/2003/05/soap-envelope" xmlns:ns1="http://www.onvif.org/ver20/media/wsdl">
+<ns0:Body><ns1:GetServiceCapabilitiesResponse><ns1:Capabilities SnapshotUri="true" Rotation="false" VideoSourceMode="false" OSD="true" Mask="true" SourceMask="true">
+<ns1:ProfileCapabilities MaximumNumberOfProfiles="20" ConfigurationsSupported="VideoSource VideoEncoder AudioSource AudioEncoder AudioOutput AudioDecoder Metadata Analytics PTZ" />
+<ns1:StreamingCapabilities RTSPStreaming="true" RTPMulticast="true" RTP_RTSP_TCP="true" NonAggregateControl="false" AutoStartMulticast="true" />
+</ns1:Capabilities>
+</ns1:GetServiceCapabilitiesResponse>
+</ns0:Body>
+</ns0:Envelope>

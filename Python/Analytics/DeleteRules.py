@@ -10,21 +10,22 @@ request_body = '''
 <env:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns="http://www.onvif.org/ver20/analytics/wsdl">
     <env:Header/>
     <env:Body>
-        <GetSupportedAnalyticsModules xmlns="http://www.onvif.org/ver20/analytics/wsdl">
+        <DeleteRules xmlns="http://www.onvif.org/ver20/analytics/wsdl">
             <ConfigurationToken>VideoAnalyticsToken</ConfigurationToken>
-        </GetSupportedAnalyticsModules>
+            <RuleName>MyMotionDetectorRule</RuleName>
+        </DeleteRules>
     </env:Body>
 </env:Envelope>
 '''
 # Define the headers for the request
 headers = {
     'Content-Type': 'application/soap+xml',
-    'SOAPAction': '"http://www.onvif.org/ver20/analytics/wsdl/GetSupportedAnalyticsModules"'
+    'SOAPAction': '"http://www.onvif.org/ver20/analytics/wsdl/DeleteRules"'
 }
 
 # Send the HTTP POST request
 response = requests.post(service_url, data=request_body, headers=headers, auth=HTTPDigestAuth('admin', 'Pa$$w0rd'))
-print(response.reason)
+print(response.text)
 # Check if the request was successful (HTTP status code 200)
 if response.status_code == 200:
     # Parse and print the response

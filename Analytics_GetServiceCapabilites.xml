@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf8'?>
+<ns0:Envelope xmlns:ns0="http://www.w3.org/2003/05/soap-envelope" xmlns:ns1="http://www.onvif.org/ver20/analytics/wsdl">
+<ns0:Body><ns1:GetServiceCapabilitiesResponse>
+<ns1:Capabilities RuleSupport="true" AnalyticsModuleSupport="true" CellBasedSceneDescriptionSupported="true" RuleOptionsSupported="true" AnalyticsModuleOptionsSupported="false" />
+</ns1:GetServiceCapabilitiesResponse>
+</ns0:Body>
+</ns0:Envelope>
