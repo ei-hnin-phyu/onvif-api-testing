@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='utf8'?>
+<ns0:Envelope xmlns:ns0="http://www.w3.org/2003/05/soap-envelope" xmlns:ns1="http://www.onvif.org/ver20/media/wsdl" xmlns:ns2="http://www.onvif.org/ver10/schema"><ns0:Body><ns1:GetAnalyticsConfigurationsResponse><ns1:Configurations token="VideoAnalyticsToken"><ns2:Name>VideoAnalyticsName</ns2:Name>
+<ns2:UseCount>3</ns2:UseCount>
+<ns2:AnalyticsEngineConfiguration><ns2:AnalyticsModule Name="MyCellMotionModule" Type="tt:CellMotionEngine"><ns2:Parameters><ns2:SimpleItem Name="Sensitivity" Value="60" />
+<ns2:ElementItem Name="Layout"><ns2:CellLayout Columns="22" Rows="18"><ns2:Transformation><ns2:Translate x="-1.000000" y="-1.000000" />
+<ns2:Scale x="0.090909" y="0.111111" />
+</ns2:Transformation>
+</ns2:CellLayout>
+</ns2:ElementItem>
+</ns2:Parameters>
+</ns2:AnalyticsModule>
+<ns2:AnalyticsModule Name="MyLineDetectorModule" Type="tt:LineDetectorEngine"><ns2:Parameters><ns2:SimpleItem Name="Sensitivity" Value="50" />
+<ns2:ElementItem Name="Layout"><ns2:Transformation><ns2:Translate x="-1.000000" y="-1.000000" />
+<ns2:Scale x="0.002000" y="0.002000" />
+</ns2:Transformation>
+</ns2:ElementItem>
+<ns2:ElementItem Name="Field"><ns2:PolygonConfiguration><ns2:Polygon><ns2:Point x="0" y="0" />
+<ns2:Point x="0" y="1000" />
+<ns2:Point x="1000" y="1000" />
+<ns2:Point x="1000" y="0" />
+</ns2:Polygon>
+</ns2:PolygonConfiguration>
+</ns2:ElementItem>
+</ns2:Parameters>
+</ns2:AnalyticsModule>
+<ns2:AnalyticsModule Name="MyFieldDetectorModule" Type="tt:FieldDetectorEngine"><ns2:Parameters><ns2:SimpleItem Name="Sensitivity" Value="50" />
+<ns2:ElementItem Name="Layout"><ns2:Transformation><ns2:Translate x="-1.000000" y="-1.000000" />
+<ns2:Scale x="0.002000" y="0.002000" />
+</ns2:Transformation>
+</ns2:ElementItem>
+<ns2:ElementItem Name="Field"><ns2:PolygonConfiguration><ns2:Polygon><ns2:Point x="0" y="0" />
+<ns2:Point x="0" y="1000" />
+<ns2:Point x="1000" y="1000" />
+<ns2:Point x="1000" y="0" />
+</ns2:Polygon>
+</ns2:PolygonConfiguration>
+</ns2:ElementItem>
+</ns2:Parameters>
+</ns2:AnalyticsModule>
+<ns2:AnalyticsModule Name="MyTamperDetecModule" Type="hikxsd:TamperEngine"><ns2:Parameters><ns2:SimpleItem Name="Sensitivity" Value="66" />
+<ns2:ElementItem Name="Transformation"><ns2:Transformation><ns2:Translate x="-1.000000" y="-1.000000" />
+<ns2:Scale x="0.002841" y="0.003472" />
+</ns2:Transformation>
+</ns2:ElementItem>
+<ns2:ElementItem Name="Field"><ns2:PolygonConfiguration><ns2:Polygon><ns2:Point x="0" y="0" />
+<ns2:Point x="0" y="576" />
+<ns2:Point x="704" y="576" />
+<ns2:Point x="704" y="0" />
+</ns2:Polygon>
+</ns2:PolygonConfiguration>
+</ns2:ElementItem>
+</ns2:Parameters>
+</ns2:AnalyticsModule>
+</ns2:AnalyticsEngineConfiguration>
+<ns2:RuleEngineConfiguration><ns2:Rule Name="MyMotionDetectorRule" Type="tt:CellMotionDetector"><ns2:Parameters><ns2:SimpleItem Name="MinCount" Value="5" />
+<ns2:SimpleItem Name="AlarmOnDelay" Value="1000" />
+<ns2:SimpleItem Name="AlarmOffDelay" Value="1000" />
+<ns2:SimpleItem Name="ActiveCells" Value="/gAlf/wD//gP//B//+H//4f//h//+H//4f//B//8B//wD/+AH/wAP4D4AA==" />
+</ns2:Parameters>
+</ns2:Rule>
+<ns2:Rule Name="MyLineDetector1" Type="tt:LineDetector"><ns2:Parameters><ns2:SimpleItem Name="Direction" Value="Any" />
+<ns2:ElementItem Name="Segments"><ns2:Polyline><ns2:Point x="924.000000" y="158.000000" />
+<ns2:Point x="922.000000" y="636.000000" />
+</ns2:Polyline>
+</ns2:ElementItem>
+</ns2:Parameters>
+</ns2:Rule>
+<ns2:Rule Name="MyFieldDetector1" Type="tt:FieldDetector"><ns2:Parameters><ns2:ElementItem Name="Field"><ns2:Polygon><ns2:Point x="104.000000" y="747.000000" />
+<ns2:Point x="472.000000" y="811.000000" />
+<ns2:Point x="645.000000" y="504.000000" />
+<ns2:Point x="503.000000" y="139.000000" />
+</ns2:Polygon>
+</ns2:ElementItem>
+</ns2:Parameters>
+</ns2:Rule>
+<ns2:Rule Name="MyTamperDetectorRule" Type="hikxsd:TamperDetector"><ns2:Parameters><ns2:ElementItem Name="Field"><ns2:PolygonConfiguration><ns2:Polygon><ns2:Point x="49" y="76" />
+<ns2:Point x="584" y="76" />
+<ns2:Point x="584" y="500" />
+<ns2:Point x="49" y="500" />
+</ns2:Polygon>
+</ns2:PolygonConfiguration>
+</ns2:ElementItem>
+</ns2:Parameters>
+</ns2:Rule>
+</ns2:RuleEngineConfiguration>
+</ns1:Configurations>
+</ns1:GetAnalyticsConfigurationsResponse>
+</ns0:Body>
+</ns0:Envelope>

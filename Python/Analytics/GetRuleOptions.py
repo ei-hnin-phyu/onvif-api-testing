@@ -12,7 +12,6 @@ request_body = '''
     <env:Body>
         <GetRuleOptions xmlns="http://www.onvif.org/ver20/analytics/wsdl">
             <ConfigurationToken>VideoAnalyticsToken</ConfigurationToken>
-            <RuleType>tt:MotionRegionDetector</RuleType>
         </GetRuleOptions>
     </env:Body>
 </env:Envelope>
