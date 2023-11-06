@@ -3,7 +3,8 @@
 <ns0:Body><ns1:GetSupportedAnalyticsModulesResponse>
 <ns1:SupportedAnalyticsModules>
 <ns2:AnalyticsModuleContentSchemaLocation>http://www.w3.org/2001/XMLSchema</ns2:AnalyticsModuleContentSchemaLocation>
-<ns2:AnalyticsModuleDescription Name="tt:CellMotionEngine" maxInstances="1"><ns2:Parameters><ns2:SimpleItemDescription Name="Sensitivity" Type="xs:integer" />
+<ns2:AnalyticsModuleDescription Name="tt:CellMotionEngine" maxInstances="1">
+<ns2:Parameters><ns2:SimpleItemDescription Name="Sensitivity" Type="xs:integer" />
 <ns2:ElementItemDescription Name="Layout" Type="tt:CellLayout" />
 </ns2:Parameters>
 <ns2:Messages IsProperty="true"><ns2:Source><ns2:SimpleItemDescription Name="VideoSourceConfigurationToken" Type="tt:ReferenceToken" />

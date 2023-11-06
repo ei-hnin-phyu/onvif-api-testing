@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf8'?>
+<ns0:Envelope xmlns:ns0="http://www.w3.org/2003/05/soap-envelope" xmlns:ns1="http://www.onvif.org/ver20/analytics/wsdl" xmlns:ns2="http://www.onvif.org/ver20/analytics">
+<ns0:Body>
+<ns1:GetRuleOptionsResponse>
+<ns1:RuleOptions Type="axt:MotionRegionConfigOptions" Name="MotionRegion">
+<ns2:MotionRegionConfigOptions><ns2:MaxRegions>8</ns2:MaxRegions>
+<ns2:DisarmSupport>true</ns2:DisarmSupport>
+<ns2:PolygonSupport>false</ns2:PolygonSupport>
+<ns2:SingleSensitivitySupport>false</ns2:SingleSensitivitySupport>
+<ns2:RuleNotification>false</ns2:RuleNotification>
+</ns2:MotionRegionConfigOptions>
+</ns1:RuleOptions>
+</ns1:GetRuleOptionsResponse>
+</ns0:Body>
+</ns0:Envelope>
