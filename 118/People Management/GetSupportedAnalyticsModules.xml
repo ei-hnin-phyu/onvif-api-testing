@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf8'?>
+<ns0:Envelope xmlns:ns0="http://www.w3.org/2003/05/soap-envelope" xmlns:ns1="http://www.onvif.org/ver20/analytics/wsdl" xmlns:ns2="http://www.onvif.org/ver10/schema"><ns0:Body><ns1:GetSupportedAnalyticsModulesResponse><ns1:SupportedAnalyticsModules><ns2:AnalyticsModuleContentSchemaLocation>http://www.w3.org/2001/XMLSchema</ns2:AnalyticsModuleContentSchemaLocation>
+<ns2:AnalyticsModuleDescription Name="tt:LoiteringDetectorEngine" maxInstances="8"><ns2:Parameters><ns2:SimpleItemDescription Name="Sensitivity" Type="xs:integer" />
+<ns2:ElementItemDescription Name="Transformation" Type="tt:Transformation" />
+<ns2:ElementItemDescription Name="Field" Type="tt:PolygonConfiguration" />
+</ns2:Parameters>
+<ns2:Messages IsProperty="true"><ns2:Source><ns2:SimpleItemDescription Name="VideoSourceConfigurationToken" Type="tt:ReferenceToken" />
+<ns2:SimpleItemDescription Name="VideoAnalyticsConfigurationToken" Type="tt:ReferenceToken" />
+<ns2:SimpleItemDescription Name="Rule" Type="xs:string" />
+</ns2:Source>
+<ns2:Key><ns2:SimpleItemDescription Name="ObjectId" Type="xs:integer" />
+</ns2:Key>
+<ns2:Data><ns2:SimpleItemDescription Name="Since" Type="xs:dateTime" />
+<ns2:SimpleItemDescription Name="TimeStamp" Type="xs:dateTime" />
+</ns2:Data>
+<ns2:ParentTopic>tns1:RuleEngine/LoiteringDetector/ObjectIsLoitering</ns2:ParentTopic>
+</ns2:Messages>
+</ns2:AnalyticsModuleDescription>
+</ns1:SupportedAnalyticsModules>
+</ns1:GetSupportedAnalyticsModulesResponse>
+</ns0:Body>
+</ns0:Envelope>

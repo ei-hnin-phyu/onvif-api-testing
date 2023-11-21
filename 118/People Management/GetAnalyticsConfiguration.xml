@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='utf8'?>
+<ns0:Envelope xmlns:ns0="http://www.w3.org/2003/05/soap-envelope" xmlns:ns1="http://www.onvif.org/ver20/media/wsdl" xmlns:ns2="http://www.onvif.org/ver10/schema"><ns0:Body><ns1:GetAnalyticsConfigurationsResponse><ns1:Configurations token="VideoAnalyticsToken"><ns2:Name>VideoAnalyticsName</ns2:Name>
+<ns2:UseCount>3</ns2:UseCount>
+<ns2:AnalyticsEngineConfiguration />
+<ns2:RuleEngineConfiguration><ns2:Rule Name="MyLoiteringDetector1" Type="tt:LoiteringDetector"><ns2:Parameters><ns2:SimpleItem Name="TimeThreshold" Value="0" />
+<ns2:SimpleItem Name="doPeriodicNotify" Value="false" />
+<ns2:SimpleItem Name="TimeInterval" Value="PT5S" />
+<ns2:ElementItem Name="Field"><ns2:PolygonConfiguration><ns2:Polygon><ns2:Point x="0.000000" y="1000.000000" />
+<ns2:Point x="0.000000" y="1000.000000" />
+<ns2:Point x="0.000000" y="1000.000000" />
+<ns2:Point x="0.000000" y="1000.000000" />
+</ns2:Polygon>
+</ns2:PolygonConfiguration>
+</ns2:ElementItem>
+</ns2:Parameters>
+</ns2:Rule>
+<ns2:Rule Name="MyLoiteringDetector2" Type="tt:LoiteringDetector"><ns2:Parameters><ns2:SimpleItem Name="TimeThreshold" Value="0" />
+<ns2:SimpleItem Name="doPeriodicNotify" Value="false" />
+<ns2:SimpleItem Name="TimeInterval" Value="PT5S" />
+<ns2:ElementItem Name="Field"><ns2:PolygonConfiguration><ns2:Polygon><ns2:Point x="0.000000" y="1000.000000" />
+<ns2:Point x="0.000000" y="1000.000000" />
+<ns2:Point x="0.000000" y="1000.000000" />
+<ns2:Point x="0.000000" y="1000.000000" />
+</ns2:Polygon>
+</ns2:PolygonConfiguration>
+</ns2:ElementItem>
+</ns2:Parameters>
+</ns2:Rule>
+<ns2:Rule Name="MyLoiteringDetector3" Type="tt:LoiteringDetector"><ns2:Parameters><ns2:SimpleItem Name="TimeThreshold" Value="0" />
+<ns2:SimpleItem Name="doPeriodicNotify" Value="false" />
+<ns2:SimpleItem Name="TimeInterval" Value="PT5S" />
+<ns2:ElementItem Name="Field"><ns2:PolygonConfiguration><ns2:Polygon><ns2:Point x="0.000000" y="1000.000000" />
+<ns2:Point x="0.000000" y="1000.000000" />
+<ns2:Point x="0.000000" y="1000.000000" />
+<ns2:Point x="0.000000" y="1000.000000" />
+</ns2:Polygon>
+</ns2:PolygonConfiguration>
+</ns2:ElementItem>
+</ns2:Parameters>
+</ns2:Rule>
+<ns2:Rule Name="MyLoiteringDetector4" Type="tt:LoiteringDetector"><ns2:Parameters><ns2:SimpleItem Name="TimeThreshold" Value="0" />
+<ns2:SimpleItem Name="doPeriodicNotify" Value="false" />
+<ns2:SimpleItem Name="TimeInterval" Value="PT5S" />
+<ns2:ElementItem Name="Field"><ns2:PolygonConfiguration><ns2:Polygon><ns2:Point x="0.000000" y="1000.000000" />
+<ns2:Point x="0.000000" y="1000.000000" />
+<ns2:Point x="0.000000" y="1000.000000" />
+<ns2:Point x="0.000000" y="1000.000000" />
+</ns2:Polygon>
+</ns2:PolygonConfiguration>
+</ns2:ElementItem>
+</ns2:Parameters>
+</ns2:Rule>
+<ns2:Rule Name="MyLoiteringDetector5" Type="tt:LoiteringDetector"><ns2:Parameters><ns2:SimpleItem Name="TimeThreshold" Value="0" />
+<ns2:SimpleItem Name="doPeriodicNotify" Value="false" />
+<ns2:SimpleItem Name="TimeInterval" Value="PT5S" />
+<ns2:ElementItem Name="Field"><ns2:PolygonConfiguration><ns2:Polygon><ns2:Point x="0.000000" y="1000.000000" />
+<ns2:Point x="0.000000" y="1000.000000" />
+<ns2:Point x="0.000000" y="1000.000000" />
+<ns2:Point x="0.000000" y="1000.000000" />
+</ns2:Polygon>
+</ns2:PolygonConfiguration>
+</ns2:ElementItem>
+</ns2:Parameters>
+</ns2:Rule>
+<ns2:Rule Name="MyLoiteringDetector6" Type="tt:LoiteringDetector"><ns2:Parameters><ns2:SimpleItem Name="TimeThreshold" Value="0" />
+<ns2:SimpleItem Name="doPeriodicNotify" Value="false" />
+<ns2:SimpleItem Name="TimeInterval" Value="PT5S" />
+<ns2:ElementItem Name="Field"><ns2:PolygonConfiguration><ns2:Polygon><ns2:Point x="0.000000" y="1000.000000" />
+<ns2:Point x="0.000000" y="1000.000000" />
+<ns2:Point x="0.000000" y="1000.000000" />
+<ns2:Point x="0.000000" y="1000.000000" />
+</ns2:Polygon>
+</ns2:PolygonConfiguration>
+</ns2:ElementItem>
+</ns2:Parameters>
+</ns2:Rule>
+<ns2:Rule Name="MyLoiteringDetector7" Type="tt:LoiteringDetector"><ns2:Parameters><ns2:SimpleItem Name="TimeThreshold" Value="0" />
+<ns2:SimpleItem Name="doPeriodicNotify" Value="false" />
+<ns2:SimpleItem Name="TimeInterval" Value="PT5S" />
+<ns2:ElementItem Name="Field"><ns2:PolygonConfiguration><ns2:Polygon><ns2:Point x="0.000000" y="1000.000000" />
+<ns2:Point x="0.000000" y="1000.000000" />
+<ns2:Point x="0.000000" y="1000.000000" />
+<ns2:Point x="0.000000" y="1000.000000" />
+</ns2:Polygon>
+</ns2:PolygonConfiguration>
+</ns2:ElementItem>
+</ns2:Parameters>
+</ns2:Rule>
+<ns2:Rule Name="MyLoiteringDetector8" Type="tt:LoiteringDetector"><ns2:Parameters><ns2:SimpleItem Name="TimeThreshold" Value="0" />
+<ns2:SimpleItem Name="doPeriodicNotify" Value="false" />
+<ns2:SimpleItem Name="TimeInterval" Value="PT5S" />
+<ns2:ElementItem Name="Field"><ns2:PolygonConfiguration><ns2:Polygon><ns2:Point x="0.000000" y="1000.000000" />
+<ns2:Point x="0.000000" y="1000.000000" />
+<ns2:Point x="0.000000" y="1000.000000" />
+<ns2:Point x="0.000000" y="1000.000000" />
+</ns2:Polygon>
+</ns2:PolygonConfiguration>
+</ns2:ElementItem>
+</ns2:Parameters>
+</ns2:Rule>
+</ns2:RuleEngineConfiguration>
+</ns1:Configurations>
+</ns1:GetAnalyticsConfigurationsResponse>
+</ns0:Body>
+</ns0:Envelope>

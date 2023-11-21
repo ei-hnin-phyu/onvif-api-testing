@@ -3,7 +3,7 @@ from requests.auth import HTTPDigestAuth
 from xml.etree import ElementTree
 
 # Define the ONVIF service endpoint URL of the device
-service_url = 'http://10.1.2.117/onvif/device_service'
+service_url = 'http://10.1.2.118/onvif/device_service'
 val = 'VideoAnalyticsToken'
 # Define the ONVIF SOAP/XML request
 request_body = f'''

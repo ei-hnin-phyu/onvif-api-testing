@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf8'?>
+<ns0:Envelope xmlns:ns0="http://www.w3.org/2003/05/soap-envelope" xmlns:ns1="http://www.onvif.org/ver20/media/wsdl" xmlns:ns2="http://www.onvif.org/ver10/schema"><ns0:Body><ns1:GetAnalyticsConfigurationsResponse><ns1:Configurations token="VideoAnalyticsToken"><ns2:Name>VideoAnalyticsName</ns2:Name>
+<ns2:UseCount>3</ns2:UseCount>
+<ns2:AnalyticsEngineConfiguration><ns2:AnalyticsModule Name="MyCountAggregationModule" Type="tt:CountAggregationEngine"><ns2:Parameters><ns2:SimpleItem Name="Sensitivity" Value="0" />
+<ns2:ElementItem Name="Transformation"><ns2:Transformation><ns2:Translate x="-1.000000" y="-1.000000" />
+<ns2:Scale x="0.002000" y="0.002000" />
+</ns2:Transformation>
+</ns2:ElementItem>
+<ns2:ElementItem Name="Field"><ns2:PolygonConfiguration><ns2:Polygon><ns2:Point x="0" y="0" />     
+<ns2:Point x="0" y="1000" />
+<ns2:Point x="1000" y="1000" />
+<ns2:Point x="1000" y="0" />
+</ns2:Polygon>
+</ns2:PolygonConfiguration>
+</ns2:ElementItem>
+</ns2:Parameters>
+</ns2:AnalyticsModule>
+</ns2:AnalyticsEngineConfiguration>
+<ns2:RuleEngineConfiguration><ns2:Rule Name="MyCountAggregation1" Type="tt:CountAggregation"><ns2:Parameters><ns2:SimpleItem Name="ReportTimeInterval" Value="PT15M" />
+<ns2:SimpleItem Name="ResetTimeInterval" Value="PT30M" />
+<ns2:SimpleItem Name="Direction" Value="Right" />
+<ns2:ElementItem Name="LineSegments"><ns2:PolylineArrayConfiguration><ns2:PolylineArray><ns2:Polyline><ns2:Point x="275.000000" y="725.000000" />
+<ns2:Point x="725.000000" y="725.000000" />
+<ns2:Point x="725.000000" y="275.000000" />
+<ns2:Point x="275.000000" y="275.000000" />
+</ns2:Polyline>
+</ns2:PolylineArray>
+</ns2:PolylineArrayConfiguration>
+</ns2:ElementItem>
+</ns2:Parameters>
+</ns2:Rule>
+</ns2:RuleEngineConfiguration>
+</ns1:Configurations>
+</ns1:GetAnalyticsConfigurationsResponse>
+</ns0:Body>
+</ns0:Envelope>
